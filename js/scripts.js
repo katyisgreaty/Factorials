@@ -1,7 +1,10 @@
 var factorial = function(placeholderNumber) {
-  n
-
-
+  if(placeholderNumber) {
+    var answer = 1;
+    for (var number = 1; number <= placeholderNumber; number += 1) {
+      answer *= number;
+    }
+  } return answer;
 }
 
 
