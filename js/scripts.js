@@ -1,13 +1,13 @@
 var factorial = function(placeholderNumber) {
-  if(placeholderNumber) {
+  if(placeholderNumber === 0){
+    return 1;
+  } else if (placeholderNumber) {
     var answer = 1;
     for (var number = 1; number <= placeholderNumber; number += 1) {
       answer *= number;
     }
-  } return answer;
+  }return answer;
 }
-
-
 
 
 $(document).ready(function(){
@@ -20,6 +20,3 @@ $(document).ready(function(){
     $(".answer").text(factorial(numberInput));
   });
 });
-//
-// if(n>0)
-//   n = n * (n-1)
